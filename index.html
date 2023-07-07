@@ -20,15 +20,12 @@
 	<!-- Main CSS -->
 	<link rel = "stylesheet" href = "style.css">
 
-	<!-- font awesome library -->
-	<script src="https://kit.fontawesome.com/2584578032.js" crossorigin="anonymous"></script>
-	
 	<style>
 
 		@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 		
 		body {
-			background-color: #15161E;
+			background-color: #1A1C2C;
 			color: #FFFFFF;
 		}
 
@@ -38,52 +35,51 @@
 
 		h3 {
 			font-size: 2.05em;
-			line-height: 1.4em;
 		}
 
 		p {
 			color: rgba(255, 255, 255, 0.75);
-			font-size: 1.35em;
-			line-height: 1.8em;
+			font-size: 1.25em;
 		}
 
 		b {
 			color: #FFFFFF;
 		}
 
-		.container-fluid {
-			padding-left: 12%;
-			padding-right: 0%;
-		}
-		.center {
-			align-items: center;
-		}
 		button.primary {
 			background-color: #4399FF;
 			color: #FFFFFF;
 			border: none;
 			font-weight: bold;
 			font-size: 1em;
-			padding: 15px 35px;
+			padding: 13px 25px;
 			border-radius: 35px;
-			transition: background-color 0.3s ease;
-			transition: font-size 0.3s ease;
+			transition: 0.5s ease background-color;
+		}
+
+		button.primary:hover, button.primary:focus, button.primary:active {
+			background-color: #3186EB;
+			cursor: pointer;
 		}
 
 		button.secondary {
-			background-color: transparent;
+			background-color: #484C69;
 			color: #FFFFFF;
-			border: 1.5px solid #FFFFFF;
+			border: none;
 			font-weight: bold;
 			font-size: 1em;
-			padding: 15px 35px;
+			padding: 13px 25px;
 			border-radius: 35px;
-			transition: background-color .3s ease;
-			transition: font-size .3s ease;
+			transition: 0.5s ease background-color;
+		}
+
+		button.secondary:hover, button.secondary:focus, button.secondary:active {
+			background-color: #373b52;
+			cursor: pointer;
 		}
 
 		div.full {
-			min-height: 90vh;
+			min-height: 100vh;
 		}
 
 		div.semi-full {
@@ -116,8 +112,8 @@
 
 		span.line-break {
 			display: block; 
-			width: 40%; 
-			margin: 0 5%;
+			width: 30%; 
+			margin-left: 35%;  
 			border: 1px solid rgba(255, 255, 255, 0.75);
 		}
 
@@ -131,7 +127,6 @@
 			background: #8956FF;
 			color: white;
 			font-weight: bold;
-			padding: 2px 5px;
 		}
 
 		nav.navbar {
@@ -139,12 +134,9 @@
 		}
 
 		nav.scrolling-active {
-			background-color: #15161E;
+			background-color: #1A1C2C;
 		}
 
-		.menuIcon {
-			display: none;
-		}
 		nav a.navbar-brand p {
 		   	color: #FFFFFF;
 		    font-weight: bold;
@@ -161,15 +153,6 @@
 			min-height: 100vh;
 		}
 
-		.hero-image {
-			align-items: center;
-			width: 50%;
-			margin-left: 90px;
-		}
-		.hero-text{
-			width: 35%;
-		}
-
 		header h1 {
 			font-size: 3.5em;
 			margin-top: 15%;
@@ -183,6 +166,12 @@
 
 		header button.primary {
 			margin-right: 20px;
+		}
+
+		header img.small {
+			width: 32vw; 
+			margin-top: -125px; 
+			margin-left: -115px;
 		}
 
 		div.genius {
@@ -205,7 +194,7 @@
 
 		div.collab {
 			text-align: center;
-			padding-top: 10%;
+			padding-top: 15%;
 		}
 
 		div.collab h2 {
@@ -222,10 +211,14 @@
 			margin-bottom: 35px;
 		}
 
+		div.features div.col-sm-5.mobile {
+			display: none;
+		}
+
 		div.reading {
 			background: rgba(94, 100, 153, 0.60);
 			text-align: center;
-			padding: 7% 10%;
+			padding: 10% 0;
 		}
 
 		div.reading h2 {
@@ -233,11 +226,15 @@
 		}
 
 		div.reading div.panel {
-			border-radius: 40px;
+			border-radius: 45px;
 			border: 2px solid rgba(255, 255, 255, 0.50);
 			background: rgba(255, 255, 255, 0.25);
 			margin: 50px 20px 0 20px;
 			padding: 20px;
+		}
+
+		div.reading div.panel.center {
+			margin-top: 85px;
 		}
 
 		div.reading div.panel h3 {
@@ -245,18 +242,21 @@
 			margin: 25px 0;
 			min-height: 50px;
 		}
-		div.panel .row {
-			flex-wrap: nowrap;
-			justify-content: center;
+
+
+		div.reading div.panel div.row {
+			width: fit-content;
+			margin: auto;
 		}
-		div.reading div.panel div.center div.highlight {
+
+		div.reading div.panel div.row div.highlight {
 			background-color: #8C52FF;
 			border-radius: 40px;
 			margin-bottom: 15px;
-			padding: 5px 20px;
+			padding: 5px 15px;
 		}
 
-		div.reading div.panel div.center div.highlight p {
+		div.reading div.panel div.row div.highlight p {
 			color: white;
 			font-size: .9em;
 			margin-bottom: 0;
@@ -264,7 +264,7 @@
 		
 		div.waitlist {
 			text-align: center;
-			padding-top: 12%;
+			padding-top: 17.5%;
 		}
 
 		div.waitlist p {
@@ -295,8 +295,19 @@
 		footer a {
 			color: rgba(255, 255, 255, 0.75);
 			line-height: 2.5em;
-			font-weight: bold;
-			transition: letter-spacing .3s ease;
+		}
+
+		footer a:hover, footer a:focus, footer a:active {
+			color: #FFFFFF;
+			text-decoration: none;
+		}
+
+		footer div.right {
+			text-align: right;
+		}
+
+		footer div.social {
+			float: right;
 		}
 
 		footer div.social h3 {
@@ -318,92 +329,223 @@
 			font-size: .9em;
 			margin-bottom: 0;
 		}
-		/* responsiveness */
 
-		@media (max-width: 1160px) {
-			.navbar-brand {
-				padding-left: 3%;
+		@media (max-width: 1360px) {
+
+			header h1 {
+				margin-top: 20%;
+				font-size: 3em;
 			}
+
+			header p {
+				font-size: 1.15em;
+			}
+
+			header img.prototype {
+				margin-top: 5%;
+			}
+
 		}
 
-		@media (max-width: 760px) {
-			nav.container {
-				padding: 0 0%;
+		@media (max-width: 1200px) {
+
+			div.reading div.col-md-4 {
+				padding: 0;
 			}
+
+			div.reading div.panel {
+				margin: 50px 10px 0 10px;
+				padding: 15px;
+			}
+
+		}
+
+		@media (max-width: 1195px) {
+
+			header h1 {
+				margin-top: 30%;
+			}
+
+			header img.prototype {
+				margin-top: 20%;
+			}
+
+		}
+
+		@media (max-width: 1070px) {
+
+			header h1 {
+				margin-top: 40%;
+			}
+			
+			header img.prototype {
+				margin-top: 30%;
+			}
+
+		}
+
+		@media (max-width: 1040px) and (min-width: 768px) {
+
+			div.reading div.panel h3 {
+				font-size: 1.05em;
+				min-height: 65px;
+			}
+
 		}
 
 		@media (max-width: 992px) {
-			p {
-				font-size: 20px;
+
+			nav.navbar {
+				background-color: #1A1C2C;
+				padding: 20px 45px;
 			}
-			.container-fluid {
-				padding: 0 10%;
-				
+
+			nav a.cta {
+				width: 100%;
 			}
-			.menuIcon {
-			position: relative;
-			float: right;
-			font-size: 30px;
-			padding: 1% 5%;
-			border-radius: 5px;
-			cursor: pointer;
-			display: inline;
-			color: #FFFFFF;
+
+			nav button.primary, nav button.secondary {
+				width: 100%;
+				margin: 15px 0;
 			}
-			.hero-text {
-				width: 80%;
-				display: flex;
-    			flex-direction: column;
-    			align-items: center;
-    			justify-content: center;
-    			width: 100%;
+
+			nav button.secondary {
+				margin-top: 50px;
 			}
-			.hero-text h1 {
-				text-align: center;
-				font-size: 50px;
-			}
-			.hero-text p {
+
+			header {
 				text-align: center;
 			}
-			.hero-image {
-				margin-left: 50px;
-				align-items: center;
-				justify-content: right;
-				display: flex;
-				width: 100%
-				
+
+			header h1 {
+				margin-top: 5%;
+				font-size: 2.5em;
 			}
-			img[src = "image/header prototype.svg"] {
-   				margin: 70px auto;
-    			width: 150%;
-				display: block;
-				
-  			}
-			img[src = "image/header progress.png"] {
+
+			header br {
 				display: none;
-				/* width: 400px;
-				margin-left: -600px;
-				padding-top: 300px; */
 			}
-		}
-		
 
-		/* interactions */
+			header div.row {
+				width: fit-content;
+				margin: auto;
+			}
 
-		button.primary:hover,
-		button.secondary:hover
-		{
-			background-color: #FFFFFF;
-			color: #1A1C2C;
-			font-size: 1.2em;
+			header div.image {
+				text-align: center;
+			}
+
+			header img.prototype {
+				content: url("image/header prototype.svg");
+				width: 85%;
+				max-width: 600px;
+				margin: 75px 0;
+			}
+
+			header img.small {
+				display: none;
+			}
+
 		}
 
-		footer a:hover {
-			color: #FFFFFF;
-			letter-spacing: .1em;
-			text-decoration: none;
+		@media (max-width: 768px) {
+
+			header h1 {
+				margin-top: 20%;
+			}
+
+			h2, div.genius h2 {
+				font-size: 2em;
+			}
+
+			h3 {
+				font-size: 1.75em;
+			}
+
+			p, div.genius p {
+				font-size: 1em;
+			}
+
+			footer, footer div.right {
+				text-align: center;
+			}
+
+			footer h3 {
+				font-size: 1.5em;
+			}
+
+			footer a.link {
+				font-size: 1.05em;
+				line-height: 3.5em;
+			}
+
+			footer div.row {
+				width: fit-content;
+				margin: auto;
+				margin-bottom: 50px;
+			}
+
+			footer div.social {
+				float: none;
+				margin-top: 50px;
+				margin-bottom: 0;
+			}
+
+			footer br.break {
+				display: none;
+			}
+
 		}
-	
+
+		@media (max-width: 695px) {
+
+			header br {
+				display: initial;
+			}
+
+		}
+
+		@media (max-width: 576px) {
+
+			header {
+				margin-top: 15%;
+			}
+
+			div.full {
+				min-height: 85vh;
+			}
+
+			div.collab, div.waitlist {
+				padding-top: 50%;
+			}
+
+			div.features div.col-sm-5.pc {
+				display: none;
+			}
+
+			div.features div.col-sm-5.mobile {
+				display: initial;
+			}
+
+			div.features img.full {
+				width: 55%;
+				margin: 50px 0;
+			}
+
+			div.features p.highlight {
+				margin-top: 50px;
+			}
+
+			div.reading div.panel {
+				margin: 50px 35px 0 35px;
+			}
+
+			div.reading div.panel.center {
+				margin-top: 50px;
+			}
+
+		}
+
 	</style>
 
 </head>
@@ -414,7 +556,7 @@
 		<div class="container">
 
 			<a class="navbar-brand" href="#">
-			
+
 				<div class="row">
 
 					<img src="image/logo.webp" alt="Cronicle Logo" width="45" height="45">
@@ -422,17 +564,16 @@
 					<p>Cronicle</p>
 
 				</div>
-				<!-- responsive nav bar -->
-				
 
 			</a>
-<!-- toggle responsive menu -->
-<script>
-	const toggle = () => {
-		document.getElementById('nav').classList.toggle('nactive')
-	};
-</script>
-			
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="margin-left: 0; float: right;">
+
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+
+			</button>
 
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 
@@ -440,19 +581,18 @@
 
 				<span class="d-flex">
 
-					<a href="#"><button class="secondary">Donate</button></a>
+					<a href="https://www.patreon.com/CronicleTechnologies" class = "cta" target = "blank"><button class="secondary">Donate</button></a>
 
 				</span>
 
 				<span class="d-flex">
 
-					<a href="#"><button class="primary">Join Now</button></a>
+					<a href="#" class = "cta"><button class="primary">Join Now</button></a>
 
 				</span>
-				<!-- responsive nav bar -->
-				
+
 			</div>
-				<span class="fas fa-bars menuIcon" onclick="toggle()"></span>
+
 		</div>
 
 	</nav>
@@ -467,42 +607,38 @@
 		<div class = "container-fluid full">
 
 			<div class = "row">
-				<div class="hero-text">
-					
 
-						<h1>Tap into your <br> <span class = "text-gradient">Hidden genius</span></h1>
+				<div class = "col-lg-1"></div>
 
-						<p>open source learning in topics you actually <b>care</b> about.</p>
+				<div class = "col-lg-5">
 
-						<div class = "row">
+					<h1>Tap into your <br> <span class = "text-gradient">Hidden genius</span></h1>
 
-							
-								<button class = "primary">Join Waitlist</button>
-							
+					<p>open source learning in topics you actually <b>care</b> about.</p>
 
-							
-								<button class = "secondary">Donate</button>
-							
+					<div class = "row">
 
-						</div>
+						<a href = "#">
+							<button class = "primary">Join Waitlist</button>
+						</a>
+
+						<a href = "https://www.patreon.com/CronicleTechnologies">
+							<button class = "secondary">Donate</button>
+						</a>
+
+					</div>
 
 				</div>
-				
-				
 
-				
-				<div class="hero-image">
-				
-				
-					<img src = "image/header prototype.svg" alt = "#" class = "full" style = "width: 100%; margin-left: 150px; width: 110%;">
+				<div class = "col-lg-1"></div>
 
-					<img src = "image/header progress.png" alt = "#" style = "max-width: 70vh; margin-top: -71px;">
+				<div class = "col-lg-5 image" style = "padding: 0;">
 
-				
+					<img src = "image/header prototype cut.svg" alt = "#" class = "full prototype">
+
+					<img src = "image/header progress.png" alt = "#" class = "small">
+
 				</div>
-				
-			
-				
 
 			</div>
 
@@ -517,9 +653,9 @@
 
 			<div class = "row">
 
-				<div class = "col-sm-1"></div>
+				<div class = "col-sm-2"></div>
 
-				<div class = "col-sm-7">
+				<div class = "col-sm-8">
 
 					<h2>Collective Genius</h2>
 
@@ -592,7 +728,7 @@
 
 			</div>
 
-			<div class = "col-sm-5">
+			<div class = "col-sm-5" style = "text-align: center;">
 
 				<img src = "image/1.png" alt = "" class = "full">
 
@@ -605,7 +741,7 @@
 
 			<div class = "col-sm-1"></div>
 
-			<div class = "col-sm-5">
+			<div class = "col-sm-5 pc" style = "text-align: center;">
 				
 				<img src = "image/2.png" alt = "" class = "full">
 
@@ -618,6 +754,12 @@
 				<h3><b>Share your wisdom</b> with your peers</h3>
 
 				<p>All resources are curated by your peers, and you. Share insights, videos, articles, or honestly anything, anywhere, anytime; <span class = "highlight">No publishing bureaucracy.</span></p>
+
+			</div>
+
+			<div class = "col-sm-5 mobile" style = "text-align: center;">
+				
+				<img src = "image/2.png" alt = "" class = "full">
 
 			</div>
 
@@ -637,7 +779,7 @@
 
 			</div>
 
-			<div class = "col-sm-5">
+			<div class = "col-sm-5" style = "text-align: center;">
 
 				<img src = "image/3.png" alt = "" class = "full">
 
@@ -654,9 +796,9 @@
 
 			<div class = "row">
 
-				<div class = "col-sm-3"></div>
+				<div class = "col-md-3"></div>
 
-				<div class = "col-sm-7">
+				<div class = "col-md-6">
 
 					<h2>Reading Made <span class = "text-gradient">Fun</span></h2>
 
@@ -670,60 +812,55 @@
 
 				<div class = "row">
 
-					<div class = "col-sm-4">
+					<div class = "col-md-4">
 
 						<div class = "panel">
 
 							<img src = "image/reading-1.png" alt = "" class = "full">
 
-							<h3>My Investment Secrets to a 6 figure portfolio</h3>
+							<h3>How to Stay Consistent</h3>
 
-							<div class="center">
-								<div class = "row">
+							<div class = "row">
 
-									<div class = "highlight" style = "margin-right: 10px;">
-										<p>finances</p>
-									</div>
+								<div class = "highlight" style = "margin-right: 5px;">
+									<p>productivity</p>
+								</div>
 
-									<div class = "highlight">
-										<p>business</p>
-									</div>
+								<div class = "highlight">
+									<p>growth</p>
+								</div>
 
-								</div> 
-							</div>
+							</div> 
 
 						</div>
 
 					</div>
 
-					<div class = "col-sm-4">
+					<div class = "col-md-4">
 
-						<div class = "panel" style="margin-top:130px;">
+						<div class = "panel center">
 
 							<img src = "image/reading-2.png" alt = "" class = "full">
 
-							<h3>Building a Unicorn Startup as a Teen</h3>
-								
-								<div class="center">
-									<div class = "row">
+							<h3>The Realization that Changed my Life</h3>
 
-										<div class = "highlight" style = "margin-right: 10px;">
-											<p>inspiration</p>
-										</div>
+							<div class = "row">
 
-										<div class = "highlight">
-											<p>growth</p>
-										</div>
-
-									</div> 
+								<div class = "highlight" style = "margin-right: 5px;">
+									<p>inspiration</p>
 								</div>
-							
+
+								<div class = "highlight">
+									<p>growth</p>
+								</div>
+
+							</div> 
 
 						</div>
 
 					</div>
 
-					<div class = "col-sm-4">
+					<div class = "col-md-4">
 
 						<div class = "panel">
 
@@ -731,19 +868,17 @@
 
 							<h3>My 1 hour study Routine: Deep Work</h3>
 
-							<div class="center">
-								<div class = "row">
+							<div class = "row">
 
-									<div class = "highlight" style = "margin-right: 10px;">
-										<p>productivity</p>
-									</div>
+								<div class = "highlight" style = "margin-right: 5px;">
+									<p>productivity</p>
+								</div>
 
-									<div class = "highlight">
-										<p>growth</p>
-									</div>
+								<div class = "highlight">
+									<p>growth</p>
+								</div>
 
-								</div> 
-							</div>
+							</div> 
 
 						</div>
 
@@ -772,9 +907,9 @@
 
 				<h2>Ready to Cultivate <br> <span class = "text-gradient">Your Genius?</span></h2>
 
-				<p>Join our community of teen innovators, builders, and creators — because we know that <b><i>real collaboration</i></b> is key.</p>
+				<p>Join our community of teen innovators, builders, and creators — because we know that <b>real collaboration</b> is key.</p>
 
-				<button class = "primary">Join the Waitlist</button>
+				<button class = "primary">Join Waitlist</button>
 
 			</div>
 
@@ -791,9 +926,9 @@
 
 				<div class = "row">
 
-					<div class = "col-sm-1"></div>
+					<div class = "col-md-1"></div>
 
-					<div class = "col-sm-5">
+					<div class = "col-md-5">
 
 						<h3>Fostering our #CollectiveGenius</h3>
 
@@ -811,31 +946,40 @@
 
 					</div>
 
-					<div class = "col-sm-5" style = "text-align: right;">
+					<div class = "col-md-5 right">
 
-						<div class = "row social" style = "float: right;">
+						<div class = "row social">
 
 							<h3>Socials</h3>
 
-							<img src = "image/social twitter.png" alt = "twitter" width = "35" height = "35">
+							<a href = "https://twitter.com/cronicletech" target = "blank">
+								<img src = "image/social twitter.png" alt = "twitter" width = "35" height = "35">
+							</a>
 
-							<img src = "image/social instagram.png" alt = "instagram" width = "35" height = "35">
+							<a href = "https://www.instagram.com/cronicletechnologies/" target = "blank">
+								<img src = "image/social instagram.png" alt = "instagram" width = "35" height = "35">
+							</a>
 
-							<img src = "image/social linkedin.png" alt = "linkedin" width = "35" height = "35">
+							<a href = "https://www.linkedin.com/company/cronicle/" target = "blank">
+								<img src = "image/social linkedin.png" alt = "linkedin" width = "35" height = "35">
+							</a>
 
 						</div>
 
-						<br><br><br><br>
+						<br class = "break">
+						<br class = "break">
+						<br class = "break">
+						<br class = "break">
 
-						<a href = "#">About Us</a>
+						<a href = "https://www.patreon.com/CronicleTechnologies" target = "blank" class = "link">Donate</a>
 
 						<br>
 
-						<a href = "#">Join Waitlist</a>
+						<a href = "#" class = "link">Join Waitlist</a>
 
 						<br>
 
-						<a href = "#">Contact Us</a>
+						<a href = "#" class = "link">Contact Us</a>
 
 					</div>
 
