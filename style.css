@@ -4,8 +4,122 @@
 	font-family: 'Poppins', sans-serif;
 }
 
+body {
+	background-color: #1A1C2C;
+	color: #FFFFFF;
+}
+
 h1, h2, h3, h4, h5, h6 {
 	font-weight: bold;
+}
+
+p {
+	color: rgba(255, 255, 255, 0.75);
+}
+
+b {
+	color: #FFFFFF;
+}
+
+button.primary {
+	background-color: #4399FF;
+	color: #FFFFFF;
+	border: none;
+	font-weight: bold;
+	font-size: 1em;
+	padding: 13px 25px;
+	border-radius: 35px;
+	transition: 0.5s ease background-color;
+}
+
+button.primary:hover, button.primary:focus, button.primary:active {
+	background-color: #FFFFFF;
+	color: #4399FF;
+	cursor: pointer;
+}
+
+button.secondary {
+	background-color: #484C69;
+	color: #FFFFFF;
+	border: none;
+	font-weight: bold;
+	font-size: 1em;
+	padding: 13px 25px;
+	border-radius: 35px;
+	transition: 0.5s ease background-color;
+}
+
+button.secondary:hover, button.secondary:focus, button.secondary:active {
+	background-color: #FFFFFF;
+	color: #484C69;
+	cursor: pointer;
+}
+
+div.full {
+	min-height: 100vh;
+}
+
+div.semi-full {
+	min-height: 65vh;
+}
+
+div.row {
+	margin-left: 0;
+}
+
+img.full {
+	width: 100%;
+}
+
+span.purple-gradient {
+	width: 50vw;
+	height: 50vw;
+	z-index: -1;
+
+	background: radial-gradient(50% 50.00% at 50% 50.00%, rgba(102, 16, 242, 0.40) 0%, rgba(102, 16, 242, 0.30) 24.48%, rgba(102, 16, 242, 0.00) 100%);
+}
+
+span.blue-gradient {
+	width: 50vw;
+	height: 50vw;
+	z-index: -1;
+
+	background: radial-gradient(50% 50.00% at 50% 50.00%, rgba(67, 153, 255, 0.50) 0%, rgba(67, 153, 255, 0.24) 48.96%, rgba(67, 153, 255, 0.00) 100%);
+}
+
+span.text-gradient {
+		background: linear-gradient(to right, #8758FF, #4399FF);
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+}
+
+span.highlight {
+	background: #8956FF;
+	color: white;
+	font-weight: bold;
+}
+
+nav.navbar {
+	padding: 20px;
+}
+
+nav.scrolling-active {
+	background-color: #1A1C2C;
+}
+
+nav a.navbar-brand p {
+   	color: #FFFFFF;
+    font-weight: bold;
+    font-size: 1.35em;
+    margin: 5px 0 0 10px;
+}
+
+nav button.secondary {
+	margin-right: 15px;]
+}
+
+nav button.navbar-toggler:active, nav button.navbar-toggler:focus {
+	outline: none;
 }
 
 nav span.icon-bar {
@@ -17,6 +131,26 @@ nav span.icon-bar {
 	margin-bottom: 5px;
 }
 
-nav button.navbar-toggler:active, nav button.navbar-toggler:focus {
-	outline: none;
+@keyframes fade-up {
+	0% {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+
+	100% {
+		opacity: 100%;
+		transform: translateY(0);
+	}
+}
+
+@keyframes fade-right {
+	0% {
+		opacity: 0;
+		transform: translateX(-100px);
+	}
+
+	100% {
+		opacity: 100%;
+		transform: translateX(0);
+	}
 }
