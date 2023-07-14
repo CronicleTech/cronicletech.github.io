@@ -213,20 +213,6 @@
 
 				</form>
 
-				<script>
-
-					const scriptURL = 'https://script.google.com/macros/s/AKfycbyWCJK8kLSMr8IodeH2sDDi_452hDVk8pjRjlzSiyVA-O3BaHxalVww-j1dAL3ydroJDw/exec'
-					const form = document.forms['form']
-
-					form.addEventListener('submit', e => {
-				    	e.preventDefault()
-				    	fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-				      		.then(response => console.log('Success!', response))
-				      		.catch(error => console.error('Error!', error.message))
-				  	})
-
-				</script>
-
 			</div>
 
 		</div>
@@ -235,8 +221,22 @@
 
 	<script>
 
+		const scriptURL = 'https://script.google.com/macros/s/AKfycbyWCJK8kLSMr8IodeH2sDDi_452hDVk8pjRjlzSiyVA-O3BaHxalVww-j1dAL3ydroJDw/exec'
+		const form = document.forms['form']
+
+		form.addEventListener('submit', e => {
+	    	e.preventDefault()
+	    	fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+	      		.then(response => console.log('Success!', response))
+	      		.catch(error => console.error('Error!', error.message))
+	  	})
+    
+	</script>
+
+	<script>
+
 	    var form = document.getElementById("form");
-	    
+
 	    async function handleSubmit(event) {
 
 	    	event.preventDefault();
@@ -256,7 +256,8 @@
 	          		form.reset();
 
 	        	}
-	    	})
+	    	});
+
 	  	};
 
 	    form.addEventListener("submit", handleSubmit);
