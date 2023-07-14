@@ -10,7 +10,7 @@
 	<meta charset = "UTF-8">
 	<meta http-equiv='content-language' content='en-us'>
 
-	<meta name = "description" content = "#">
+	<meta name = "description" content = "Tap into your hidden genius Croicle is an open source learning platform providing topics you actually care about.">
 
 	<meta name = "viewport" content = "width = device-width, initial-scale = 1">
 
@@ -22,13 +22,6 @@
 
 	<style>
 
-		@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-		
-		body {
-			background-color: #1A1C2C;
-			color: #FFFFFF;
-		}
-
 		h2 {
 			font-size: 2.65em;
 		}
@@ -38,76 +31,7 @@
 		}
 
 		p {
-			color: rgba(255, 255, 255, 0.75);
 			font-size: 1.25em;
-		}
-
-		b {
-			color: #FFFFFF;
-		}
-
-		button.primary {
-			background-color: #4399FF;
-			color: #FFFFFF;
-			border: none;
-			font-weight: bold;
-			font-size: 1em;
-			padding: 13px 25px;
-			border-radius: 35px;
-			transition: 0.5s ease background-color;
-		}
-
-		button.primary:hover, button.primary:focus, button.primary:active {
-			background-color: #3186EB;
-			cursor: pointer;
-		}
-
-		button.secondary {
-			background-color: #484C69;
-			color: #FFFFFF;
-			border: none;
-			font-weight: bold;
-			font-size: 1em;
-			padding: 13px 25px;
-			border-radius: 35px;
-			transition: 0.5s ease background-color;
-		}
-
-		button.secondary:hover, button.secondary:focus, button.secondary:active {
-			background-color: #373b52;
-			cursor: pointer;
-		}
-
-		div.full {
-			min-height: 100vh;
-		}
-
-		div.semi-full {
-			min-height: 65vh;
-		}
-
-		div.row {
-			margin-left: 0;
-		}
-
-		img.full {
-			width: 100%;
-		}
-
-		span.purple-gradient {
-			width: 50vw;
-			height: 50vw;
-			z-index: -1;
-
-			background: radial-gradient(50% 50.00% at 50% 50.00%, rgba(102, 16, 242, 0.40) 0%, rgba(102, 16, 242, 0.30) 24.48%, rgba(102, 16, 242, 0.00) 100%);
-		}
-
-		span.blue-gradient {
-			width: 50vw;
-			height: 50vw;
-			z-index: -1;
-
-			background: radial-gradient(50% 50.00% at 50% 50.00%, rgba(67, 153, 255, 0.50) 0%, rgba(67, 153, 255, 0.24) 48.96%, rgba(67, 153, 255, 0.00) 100%);
 		}
 
 		span.line-break {
@@ -115,37 +39,6 @@
 			width: 30%; 
 			margin-left: 35%;  
 			border: 1px solid rgba(255, 255, 255, 0.75);
-		}
-
-		span.text-gradient {
-  			background: linear-gradient(to right, #8758FF, #4399FF);
-			-webkit-text-fill-color: transparent;
-			-webkit-background-clip: text;
-		}
-
-		span.highlight {
-			background: #8956FF;
-			color: white;
-			font-weight: bold;
-		}
-
-		nav.navbar {
-			padding: 20px;
-		}
-
-		nav.scrolling-active {
-			background-color: #1A1C2C;
-		}
-
-		nav a.navbar-brand p {
-		   	color: #FFFFFF;
-		    font-weight: bold;
-		    font-size: 1.35em;
-		    margin: 5px 0 0 10px;
-		}
-
-		nav button.secondary {
-			margin-right: 15px;]
 		}
 
 		header {
@@ -166,6 +59,14 @@
 
 		header button.primary {
 			margin-right: 20px;
+		}
+
+		header h1, header p, header button {
+			animation: fade-right 0.75s ease-out;
+		}
+
+		header img {
+			animation: fade-up 0.75s ease-out;
 		}
 
 		header img.small {
@@ -550,16 +451,17 @@
 
 </head>
 <body>
+
 	<!-- Navigation -->
 	<nav class="navbar navbar-expand-lg fixed-top">
 
 		<div class="container">
 
-			<a class="navbar-brand" href="#">
+			<a class="navbar-brand" href="https://cronicle.space">
 
 				<div class="row">
 
-					<img src="image/logo.webp" alt="Cronicle Logo" width="45" height="45">
+					<img src="image/logo.webp" alt="cronicle logo" width="45" height="45">
 
 					<p>Cronicle</p>
 
@@ -587,7 +489,7 @@
 
 				<span class="d-flex">
 
-					<a href="#" class = "cta"><button class="primary">Join Now</button></a>
+					<a href="https://cronicle.space/join/" class = "cta"><button class="primary">Join Now</button></a>
 
 				</span>
 
@@ -618,11 +520,11 @@
 
 					<div class = "row">
 
-						<a href = "#">
+						<a href = "https://cronicle.space/join/">
 							<button class = "primary">Join Waitlist</button>
 						</a>
 
-						<a href = "https://www.patreon.com/CronicleTechnologies">
+						<a href = "https://www.patreon.com/CronicleTechnologies" target = "blank">
 							<button class = "secondary">Donate</button>
 						</a>
 
@@ -634,9 +536,9 @@
 
 				<div class = "col-lg-5 image" style = "padding: 0;">
 
-					<img src = "image/header prototype cut.svg" alt = "#" class = "full prototype">
+					<img src = "image/header prototype cut.svg" alt = "cronicle prototype" class = "full prototype">
 
-					<img src = "image/header progress.webp" alt = "#" class = "small">
+					<img src = "image/header progress.webp" alt = "progress" class = "small">
 
 				</div>
 
@@ -909,7 +811,9 @@
 
 				<p>Join our community of teen innovators, builders, and creators — because we know that <b>real collaboration</b> is key.</p>
 
-				<button class = "primary">Join Waitlist</button>
+				<a href = "https://cronicle.space/join/">
+					<button class = "primary">Join Waitlist</button>
+				</a>
 
 			</div>
 
@@ -932,7 +836,7 @@
 
 						<h3>Fostering our #CollectiveGenius</h3>
 
-						<a class="footer-brand" href="#">
+						<a class="footer-brand" href="https://cronicle.space">
 
 							<div class="row">
 
@@ -975,11 +879,11 @@
 
 						<br>
 
-						<a href = "#" class = "link">Join Waitlist</a>
+						<a href = "https://cronicle.space/join/" class = "link">Join Waitlist</a>
 
 						<br>
 
-						<a href = "#" class = "link">Contact Us</a>
+						<a href = "mailto:admin@cronicle.space" class = "link">Contact Us</a>
 
 					</div>
 
