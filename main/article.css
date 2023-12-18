@@ -1,0 +1,168 @@
+h1 {
+	font-size: 2.75em;
+	line-height: 1.25em;
+	margin-bottom: 35px;
+}
+
+nav {
+	background-color: #1A1C2C;
+}
+
+div.container-row {
+	width: 100%;
+}
+
+div.top-content {
+	margin-top: 17%;
+	margin-bottom: 75px;
+	animation: fade-right 0.75s ease-out;
+}
+
+img.full {
+	width: 100%;
+	border-radius: 15px;
+}
+
+div.subtitle {
+	margin-left: 0;
+	margin-bottom: 75px;
+}
+
+div.subtitle img[src *= "author"] {
+	border-radius: 50%;
+	margin-right: 15px;
+}
+
+div.subtitle img[src *= "icon"] {
+	margin-top: 15px;
+	margin-right: 15px;
+}
+
+div.subtitle p {
+	color: #FFFFFF;
+	margin-top: 15px;
+}
+
+div.subtitle p.break {
+	margin: 15px 15px 0 15px;
+}
+
+div.content {
+	margin-bottom: 100px;
+	animation: fade-up 0.75s ease-out;
+}
+
+div.content h2 {
+	line-height: 1.5em;
+	margin-top: 75px;
+	margin-bottom: 50px;
+}
+
+div.content h3 {
+	font-size: 1.5em;
+	margin-top: 50px;
+	margin-bottom: 35px;
+}
+
+div.content p {
+	color: #FFFFFF;
+	text-align: justify;
+	font-size: 1.25em;
+	line-height: 2.25em;
+}
+
+div.content img.full {
+	margin-bottom: 75px;
+	user-select: none;
+}
+
+div.content ul {
+	margin-top: 35px;
+}
+
+div.content ul li {
+	font-size: 1.15em;
+	line-height: 2.5em;
+	margin-bottom: 10px;
+}
+
+div.content div.row {
+	margin: 50px 0;
+}
+
+div.content div.row div.col-lg-7 {
+	padding: 0;
+}
+
+div.content div.row p {
+	margin-bottom: 0;
+}
+
+div.content div.row img.full {
+	margin-bottom: 0;
+}
+
+div.content div.row div.image.left {
+	padding-left: 0;
+	padding-right: 35px;
+}
+
+div.content div.row div.image.right {
+	padding-left: 35px;
+	padding-right: 0;
+}
+
+@media (max-width: 992px) {
+
+	div.top-content {
+		margin-top: 25%;
+	}
+
+	div.top-content div.subtitle .date {
+		display: none;
+	}
+
+	div.content div.row div.image {
+		text-align: center;
+	}
+
+	div.content div.row div.image.right {
+		margin-top: 75px;
+		padding-left: 0;
+	}
+
+	div.content div.row div.image.left {
+		margin-bottom: 75px;
+		padding-right: 0;
+	}
+
+	div.content div.row img.full {
+		max-width: 300px;
+	}
+
+}
+
+@media (max-width: 768px) {
+
+	div.top-content {
+		margin-top: 35%;
+	}	
+
+}
+
+@media (max-width: 576px) {
+
+	h1 {
+		font-size: 2em;
+		line-height: 1.5em;
+	}
+
+	div.subtitle img[src *= "icon"] {
+		display: none;
+	}
+
+	div.subtitle p.author, p.time, p.break {
+		display: none;
+	}
+
+}

@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+	font-family: 'Poppins', sans-serif;
+}
+
+body {
+	background-color: #1A1C2C;
+	color: #FFFFFF;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+}
+
+p {
+	color: rgba(255, 255, 255, 0.75);
+}
+
+b {
+	color: #FFFFFF;
+}
+
+a {
+	color: #4399FF;
+}
+
+a:hover, a:active, a:focus {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+button.primary {
+	background-color: #4399FF;
+	color: #FFFFFF;
+	border: none;
+	font-weight: bold;
+	font-size: 1em;
+	padding: 13px 25px;
+	border-radius: 25px;
+	transition: 0.5s ease background-color;
+}
+
+button.primary:hover, button.primary:focus, button.primary:active {
+	background-color: #FFFFFF;
+	color: #4399FF;
+	cursor: pointer;
+	outline: none;
+}
+
+button.secondary {
+	background-color: #484C69;
+	color: #FFFFFF;
+	border: none;
+	font-weight: bold;
+	font-size: 1em;
+	padding: 13px 25px;
+	border-radius: 25px;
+	transition: 0.5s ease background-color;
+}
+
+button.secondary:hover, button.secondary:focus, button.secondary:active {
+	background-color: #FFFFFF;
+	color: #484C69;
+	cursor: pointer;
+	outline: none;
+}
+
+div.full {
+	min-height: 100vh;
+}
+
+div.semi-full {
+	min-height: 65vh;
+}
+
+div.row {
+	margin-left: 0;
+}
+
+img.full {
+	width: 100%;
+}
+
+span.purple-gradient {
+	width: 50vw;
+	height: 50vw;
+	z-index: -1;
+
+	background: radial-gradient(50% 50.00% at 50% 50.00%, rgba(102, 16, 242, 0.40) 0%, rgba(102, 16, 242, 0.30) 24.48%, rgba(102, 16, 242, 0.00) 100%);
+}
+
+span.blue-gradient {
+	width: 50vw;
+	height: 50vw;
+	z-index: -1;
+
+	background: radial-gradient(50% 50.00% at 50% 50.00%, rgba(67, 153, 255, 0.50) 0%, rgba(67, 153, 255, 0.24) 48.96%, rgba(67, 153, 255, 0.00) 100%);
+}
+
+span.text-gradient {
+		background: linear-gradient(to right, #8758FF, #4399FF);
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+}
+
+span.highlight {
+	background: #8956FF;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+nav.navbar {
+	padding: 20px;
+}
+
+nav.scrolling-active {
+	background-color: #1A1C2C;
+}
+
+nav a.navbar-brand p {
+   	color: #FFFFFF;
+    font-weight: bold;
+    font-size: 1.25em;
+    margin: 3px 35px 0 15px;
+}
+
+nav a.navbar-brand:hover p, nav a.navbar-brand:active p, nav a.navbar-brand:focus p {
+	color: rgba(255, 255, 255, 0.85);
+}
+
+nav a.text {
+	color: #FFFFFF;
+	font-size: 1em;
+	margin-top: 5px;
+	margin-right: 45px;
+}
+
+nav a.text:hover, a.text:active, a.text:focus {
+	color: rgba(255, 255, 255, 0.75);
+	text-decoration: none;
+}
+
+nav div.collapse a:hover, a:active, a:focus {
+	color: rgba(255, 255, 255, 0.75);
+	text-decoration: none;
+}
+
+nav span.d-flex a.text, nav span.d-flex.button button.primary {
+	display: none;
+}
+
+nav svg {
+	margin-top: 3px;
+	margin-right: 40px;
+}
+
+nav svg path {
+	fill: #FFFFFF;
+}
+
+nav svg:hover path, nav svg:active path, nav svg:focus path {
+	fill: rgba(255, 255, 255, 0.75);
+}
+
+nav a.profile {
+	margin-top: 2px;
+}
+
+nav a.profile img {
+	background-color: #8C52FF;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+}
+
+nav a.profile p {
+	color: #FFFFFF;
+	font-size: 1.05em;
+	font-weight: bold;
+	margin: 9px 0 0 20px;
+	user-select: none;
+}
+
+nav a.profile:hover p, nav a.profile:active p, nav a.profile:focus p {
+	color: rgba(255, 255, 255, 0.75);
+}
+
+nav button.primary, nav button.secondary {
+	font-size: .9em;
+	padding: 12px 25px;
+}
+
+nav button.secondary {
+	margin-right: 15px;
+}
+
+nav button.navbar-toggler:active, nav button.navbar-toggler:focus {
+	outline: none;
+}
+
+nav span.icon-bar {
+	background-color: #FFFFFF;
+	border-radius: 5px;
+	display: block;
+	width: 35px;
+	height: 3.5px;
+	margin-bottom: 5px;
+}
+
+footer {
+	background-color: #1A1C2C;
+}
+
+footer div.top {
+	padding: 75px 0;
+}
+
+footer h3 {
+	font-size: 1.75em;
+	line-height: 1.5em;
+	margin-bottom: 50px;
+}
+
+footer a.footer-brand p {
+   	color: #FFFFFF;
+    font-weight: bold;
+    font-size: 2em;
+    margin: 15px 0 0 25px;
+}
+
+footer a {
+	color: rgba(255, 255, 255, 0.75);
+	line-height: 2.5em;
+}
+
+footer a:hover, footer a:focus, footer a:active {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+footer div.right {
+	text-align: right;
+}
+
+footer div.social {
+	float: right;
+}
+
+footer div.social h3 {
+	font-size: 1.25em;
+	margin-right: 50px;
+}
+
+footer div.social img {
+	margin-right: 15px;
+}
+
+footer div.bottom {
+	text-align: center;
+	border-top: 1px solid rgba(255, 255, 255, 0.5);
+	padding: 25px 0;
+}
+
+footer div.bottom p {
+	font-size: .9em;
+	margin-bottom: 0;
+}
+
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 100%;
+	}
+}
+
+@keyframes fade-up {
+	0% {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+
+	100% {
+		opacity: 100%;
+		transform: translateY(0);
+	}
+}
+
+@keyframes fade-right {
+	0% {
+		opacity: 0;
+		transform: translateX(-100px);
+	}
+
+	100% {
+		opacity: 100%;
+		transform: translateX(0);
+	}
+}
+
+@media (max-width: 992px) {
+
+	nav.navbar {
+		background-color: #1A1C2C;
+		padding: 20px 45px;
+	}
+
+	nav a.text {
+		font-size: 1.15em;
+		text-align: center;
+		margin: 15px 0;
+	}
+
+	nav span.d-flex svg, nav span.d-flex a.profile {
+		display: none;
+	}
+
+	nav span.d-flex a.text {
+		display: initial;
+		width: 100%;
+	}
+
+	nav a.cta {
+		width: 100%;
+	}
+
+	nav button.primary, nav span.d-flex.button button.primary, nav button.secondary {
+		width: 100%;
+		font-size: 1em;
+		padding: 13px 25px;
+		margin: 15px 0;
+		display: initial;
+	}
+
+	nav span.d-flex.button a {
+		width: 100%;
+	}
+
+}
+
+@media (max-width: 768px) {
+
+	footer, footer div.right {
+		text-align: center;
+	}
+
+	footer h3 {
+		font-size: 1.5em;
+	}
+
+	footer a.link {
+		font-size: 1.05em;
+		line-height: 3.5em;
+	}
+
+	footer div.row {
+		width: fit-content;
+		margin: auto;
+		margin-bottom: 50px;
+	}
+
+	footer div.social {
+		float: none;
+		margin-top: 50px;
+		margin-bottom: 0;
+	}
+
+	footer br.break {
+		display: none;
+	}
+
+}
+
+@media (max-width: 576px) {
+
+	nav a.navbar-brand p {
+    	font-size: 1em;
+    	margin-top: 7px;
+	}
+	
+}

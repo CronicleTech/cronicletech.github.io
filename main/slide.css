@@ -1,0 +1,86 @@
+nav {
+	background-color: #1A1C2C;
+}
+
+div.content {
+	margin-top: 13%;
+	margin-bottom: 100px;
+}
+
+div.content div.carousel {
+	animation: fade-right 0.75s ease-out;
+}
+
+div.content div.carousel-item img {
+	border-radius: 15px;
+	user-select: none;
+	pointer-events: none;
+}
+
+div.content .carousel-indicators li {
+	background-color: rgba(0, 0, 0, .5);
+}
+
+div.content .carousel-indicators .active {
+	background-color: #000000;
+}
+
+div.content div.desc {
+	animation: fade-up 0.75s ease-out;
+}
+
+div.content h1 {
+	font-size: 2.25em;
+	margin-top: 75px;
+	margin-bottom: 25px;
+}
+
+div.subtitle {
+	margin-bottom: 75px;
+}
+
+div.subtitle img[src *= "author"] {
+	border-radius: 50%;
+	margin-right: 15px;
+}
+
+div.subtitle img[src *= "icon"] {
+	margin-top: 15px;
+	margin-right: 15px;
+}
+
+div.subtitle p {
+	color: #FFFFFF;
+	margin-top: 15px;
+}
+
+div.subtitle p.break {
+	margin: 15px 15px 0 15px;
+}
+
+div.content p.caption {
+	color: #FFFFFF;
+	text-align: justify;
+	font-size: 1.25em;
+	line-height: 2.25em;
+}
+
+@media (max-width: 992px) {
+
+	div.content {
+		margin-top: 25%;
+	}
+
+}
+
+@media (max-width: 576px) {
+
+	div.content {
+		margin-top: 35%;
+	}
+
+	div.subtitle p.info, img.info {
+		display: none;
+	}
+
+}
